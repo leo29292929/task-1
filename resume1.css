@@ -1,0 +1,196 @@
+/* Main Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal columns */
+    grid-template-rows: auto auto;  /* 2 rows with automatic height */
+    gap: 10px; /* Space between grid items */
+    padding: 10px; /* Padding around the grid container */
+}
+
+/* Sections */
+.section1, .section2, .section3 {
+    overflow: hidden; /* Ensure no content overflows */
+    border-radius: 60px;
+    border: black double 6px;
+    padding: 15px; /* Padding inside the section */
+}
+
+.section1 {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 1; /* First row */
+    background-color: rgb(217, 228, 134); /* Light background */
+}
+
+.section2 {
+    grid-column: 2 / 3; /* Second column */
+    grid-row: 1; /* First row */
+    background-color: #e0e0e0; /* Slightly darker background */
+    padding: 20px; /* Adjusted padding for Section 2 */
+    position: relative;
+    overflow: hidden; /* Ensure no overflow */
+    max-width: 100%; /* Ensure the container takes the full width of its parent */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.section3 {
+    grid-column: 1 / 3; /* Span both columns */
+    grid-row: 2; /* Second row */
+    background-color: #d0d0d0; /* Even darker background */
+    border: 1px solid #aaa; /* Darker border */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Padding inside the section */
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 1400% 100%;
+    animation: rainbowTransition 10s linear infinite;
+    padding: 15px;
+    color: white;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes rainbowTransition {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* H1 Styling */
+h1 {
+    padding: 10px;
+    width: fit-content;
+    border-radius: 50px;
+    border: lightpink dashed 3px;
+    background-color: lightseagreen;
+}
+
+/* Unordered List */
+#section-ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+
+#section-ul > li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+#section-ul .content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Message Box */
+.message-box {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: fit-content;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info, .social-media {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.contact-info h3, .social-media h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 5px 0;
+}
+
+.social-media a:hover {
+    color: palegreen;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+/* Tabs */
+.tabs {
+  transform: translate(0px,350px);  
+    position:absolute;
+    
+}
+
+.tablink {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 18px;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.tablink:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
