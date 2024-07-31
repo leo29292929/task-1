@@ -5,6 +5,7 @@
     grid-template-rows: auto auto;  /* 2 rows with automatic height */
     gap: 10px; /* Space between grid items */
     padding: 10px; /* Padding around the grid container */
+    display:inherit;
 }
 
 /* Sections */
