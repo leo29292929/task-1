@@ -1,4 +1,4 @@
-const adjustContainer = () => {
+/*const adjustContainer = () => {
     const screenWidth = window.innerWidth;
     const div = document.querySelector('body');
 
@@ -26,7 +26,7 @@ const adjustContainer = () => {
 window.addEventListener('resize', adjustContainer);
 
 // Call adjustContainer initially to set the correct size on load
-adjustContainer();
+adjustContainer();*/
 
 
 
