@@ -1,6 +1,3 @@
-
-
-
     const items = document.querySelectorAll("#section-ul > li");
     items.forEach(element => {
         element.style.color = "maroon";
@@ -14,22 +11,19 @@
             const content = this.querySelector(".content");
             content.style.display=(content.style.display === "block" )? "none" : "block"; 
            
-            
         });
     });
 
 
-    
     const imageSources = ['medium.webp', 'medium (1).webp', 'medium (2).webp']; // Replace with your image paths
-
     // Create a single img element
     const image = document.createElement('img');
     image.className="secimg";
     image.src = imageSources[0]; // Set the initial image
     image.style.width = '200px'; // Set a default size
     image.style.height = 'auto';
-    image.style.position='relative'
-    
+
+ 
     // Append the image to the .section2 container
     document.querySelector('.section2').appendChild(image);
 
@@ -45,7 +39,6 @@
             // Mark that the image has been changed
            imageChanged=true
         } 
-        
     });
 
     // Reset imageChanged flag when mouse leaves the image
@@ -53,16 +46,12 @@
         imageChanged = false;
     });
     
-
      // Create a div element
 const display = document.createElement('div');
-
 // Set the inner text of the div
 display.innerText = 'Please click the image.';
-
 // Add a class to the div
 display.classList.add('message-box');
-
 // Append the div to the .section2 element
 document.querySelector('.section2').appendChild(display);
 display.style.position='relative'
@@ -86,6 +75,11 @@ const tabContents = document.querySelectorAll('.tabcontent');
 tabContents.forEach(content => {
     document.querySelector('.section2').appendChild(content);
 });
+
+
+
+
+
 
 
 
