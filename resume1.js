@@ -1,32 +1,3 @@
-/*const adjustContainer = () => {
-    const screenWidth = window.innerWidth;
-    const div = document.querySelector('body');
-
-    // Adjust width based on screen size
-    if (screenWidth <= 600) {
-        // Phone
-        div.style.width = '100%';
-        div.style.height = 'auto'; // Height adjusts automatically
-    } else if (screenWidth > 600 && screenWidth <= 900) {
-        // Tablet
-        div.style.width = '80%';
-        div.style.height = 'auto'; // Height adjusts automatically
-    } else if (screenWidth > 900 && screenWidth <= 1200) {
-        // Laptop
-        div.style.width = '70%';
-        div.style.height = 'auto'; // Height adjusts automatically
-    } else {
-        // Desktop
-        div.style.width = '50%';
-        div.style.height = 'auto'; // Height adjusts automatically
-    }
-};
-
-// Call adjustContainer on window resize
-window.addEventListener('resize', adjustContainer);
-
-// Call adjustContainer initially to set the correct size on load
-adjustContainer();*/
 
 
 
